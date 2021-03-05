@@ -1,0 +1,131 @@
+.parent-page {
+  background-color: var(--background-color);
+}
+
+.b-parent {
+  padding-top: var(--large-padding);
+  padding-bottom: var(--large-margin);
+}
+
+.b-parent__header {
+  margin-bottom: var(--big-margin);
+  display: flex;
+  justify-content: space-between;
+}
+
+.b-parent__header-title {
+  margin-right: var(--common-margin);
+}
+
+.b-parent__panel {
+  margin-bottom: var(--large-margin);
+}
+
+.b-parent__edit-form .MuiFormControl-root {
+  display: block;
+  margin-bottom: var(--average-margin);
+}
+
+.b-parent__edit-form .MuiInputBase-root {
+  width: 292px;
+}
+
+.b-parent .b-parent__edit-form-save-btn {
+  margin-top: var(--common-margin);
+}
+
+.b-parent__data div span:first-child {
+  margin-right: var(--tiny-margin);
+}
+
+.b-parent-pupils.b-panel {
+  padding-bottom: 1px;
+}
+
+.b-parent-pupils .b-parent-pupils__search {
+  width: 100%;
+  margin-bottom: var(--common-margin);
+}
+
+.b-parent-pupils .b-parent-pupils__header {
+  padding: 0;
+}
+
+.b-parent-pupils .b-parent-pupils__close-btn {
+  border-radius: 0;
+  padding: 16px 23px;
+}
+
+.b-parent-pupils__title {
+  padding: var(--common-padding) var(--common-padding);
+}
+
+.b-parent-pupils .b-list li:hover {
+  cursor: pointer;
+}
+
+.b-parent-pupils .b-parent-pupils__list li {
+  padding: 0;
+}
+
+.b-parent .b-parent__edit-btn {
+  margin-right: var(--common-margin);
+}
+
+.b-parent-pupils__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--common-margin);
+}
+
+.b-parent .b-parent-pupils .b-parent-pupils__header-add-btn {
+  font-size: 22px;
+  padding: 0;
+}
+
+.b-parent__telegram,
+.b-parent .b-parent__telegram a {
+  color: white;
+}
+
+.b-parent .b-parent__telegram a {
+  display: inline-block;
+  margin-right: var(--tiny-margin);
+}
+
+@media (max-width: 504px) {
+  .b-parent__btn-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .b-parent .b-parent__edit-btn {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .b-parent__edit-form .MuiInputBase-root {
+    width: 100%;
+  }  
+}
+
+@media (max-width: 768px) {
+  .b-parent .b-parent__edit-btn {
+    max-height: 40px;
+    min-width: 40px;
+  }
+  
+  .b-parent {
+    padding-bottom: 0;
+  }
+
+  .parent-page .b-app {
+    padding-bottom: var(--large-margin);
+  }
+
+  .b-parent .b-parent__header-title {
+    font-size: 23px;
+  }
+}

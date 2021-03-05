@@ -1,0 +1,37 @@
+image: docker:stable
+
+stages:
+    - build
+
+.dind:
+    variables:
+        DOCKER_TLS_CERTDIR: "/certs"
+    services:
+        - docker:dind
+    before_script:
+        - echo -n ${CI_JOB_TOKEN} | docker login -u ${CI_REGISTRY_USER} --password-stdin ${CI_REGISTRY}
+
+build:
+    extends: .dind
+    stage: build
+    variables:
+        GIT_SUBMODULE_STRATEGY: recursive
+    script:
+        - docker pull ${CI_REGISTRY_IMAGE}:latest || true
+        - docker pull ${CI_REGISTRY_IMAGE}:${CI_COMMIT_BEFORE_SHA} || true
+        - >
+            docker build
+            --pull
+            --cache-from ${CI_REGISTRY_IMAGE}:latest
+            --cache-from ${CI_REGISTRY_IMAGE}:${CI_COMMIT_BEFORE_SHA}
+            --build-arg REACT_APP_API_URL=${SAVE_SCHOOL_API_URL}
+            --tag ${CI_REGISTRY_IMAGE}:${CI_COMMIT_SHA}
+            .
+        - docker tag ${CI_REGISTRY_IMAGE}:${CI_COMMIT_SHA} ${CI_REGISTRY_IMAGE}:${CI_COMMIT_REF_SLUG}
+        - docker push ${CI_REGISTRY_IMAGE}:${CI_COMMIT_SHA}
+        - docker push ${CI_REGISTRY_IMAGE}:${CI_COMMIT_REF_SLUG}
+        - > 
+            if [ $CI_COMMIT_REF_SLUG == "master" ]; then 
+                docker tag ${CI_REGISTRY_IMAGE}:${CI_COMMIT_SHA} ${CI_REGISTRY_IMAGE}:latest &&
+                docker push ${CI_REGISTRY_IMAGE}:latest
+            fi

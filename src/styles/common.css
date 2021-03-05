@@ -1,0 +1,284 @@
+@font-face {
+  font-family: RTRegular;
+  src: url('../fonts/RTRegular.ttf');
+}
+
+@font-face {
+  font-family: RTBold;
+  src: url('../fonts/RTBold.ttf');
+}
+
+html {
+  overflow-y: scroll;
+}
+
+html, body, #root {
+  min-height: 100vh;
+  margin: 0;
+  overscroll-behavior-x: none;
+  font-family: 'Circe Regular', sans-serif;
+  padding: 0!important;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold!important;
+  font-family: 'Circe Bold', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+small {
+  color: rgba(0, 0, 0, 0.54)!important;
+  font-size: 1rem;
+}
+
+.b-app h1 {
+  font-size: 26px;
+}
+
+.b-app a {
+  color: black;
+  transition: color 0.2s ease-in-out;
+}
+
+.b-app a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.b-panel {
+  background-color: white;
+  padding: var(--large-padding) var(--big-padding);
+  border-radius: var(--border-radius);
+}
+
+.b-app .b-button {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  padding: 8px 10px;
+  font-size: 13px;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff!important;
+  transition: color .15s ease-in-out,opacity .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out, 0.3s ease background-color;
+}
+
+.b-button:focus {
+  outline: none;
+}
+
+.b-button:hover {
+  background-color: var(--secondary-hover-color)!important;
+}
+
+.b-button--main {
+  background-color: var(--main-color)!important;
+}
+
+.b-button--main:hover {
+  background-color: var(--main-hover-color)!important;
+  transition: 0.3s ease background-color;
+}
+
+.b-button--secondary {
+  background-color: var(--secondary-color)!important;
+}
+
+.b-button--blue {
+  background-color: var(--blue-color)!important;
+}
+
+.b-button--blue:hover {
+  background-color: var(--blue-hover-color)!important;
+}
+
+.b-button.b-button--danger {
+  background-color: var(--danger-color);
+}
+
+.b-app .b-card {
+  display: block;
+  padding: 30px;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  text-align: center;
+  font-family: RTBold, 'sans serif'!important;
+  transition: box-shadow .2s ease,-webkit-box-shadow .2s ease;
+}
+
+.b-card:hover {
+  cursor: pointer;
+}
+
+.b-list {
+  padding: 0;
+}
+
+.b-list li a {
+  padding: var(--common-padding) var(--tiny-padding);
+  border-radius: var(--border-radius);
+  background-color: white;
+  margin-bottom: var(--common-margin);
+  border: 1px solid rgba(0,0,0,.125);
+  transition: 0.3s ease background-color, 0.3s ease color;
+}
+
+.b-list li a:hover {
+  background-color: var(--main-color);
+  color: white;
+  transition: 0.3s ease background-color, 0.3s ease color;
+}
+
+.b-list li a {
+  display: block;
+  padding: var(--average-padding) 14px;
+}
+
+/* Mui styles */
+
+.MuiInputBase-root,
+.MuiFormLabel-root {
+  font-family: RTRegular, 'sans serif'!important;
+}
+
+.MuiInputBase-root.MuiInput-root:hover {
+  border-bottom: none;
+}
+
+.MuiInputBase-root.MuiInput-root.MuiInput-underline:hover:before,
+.MuiInputBase-root.MuiInput-root.MuiInput-underline.Mui-focused:before {
+  border-bottom: 2px solid var(--main-color);
+}
+
+.MuiInputBase-root.MuiInput-root.MuiInput-underline:after {
+  border-bottom: none;
+}
+
+.MuiFormLabel-root.MuiInputLabel-root.Mui-focused {
+  color: var(--main-color);
+}
+
+.MuiButtonBase-root {
+  outline: none!important;
+}
+
+.MuiInputBase-root.MuiOutlinedInput-root {
+  border-radius: var(--border-radius);
+  background-color: white;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: rgba(0,0,0,.125);
+}
+
+.MuiInputBase-root.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline,
+.MuiInputBase-root.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: var(--main-color);
+}
+
+.MuiGridList-root {
+  margin: 0!important;
+}
+
+.MuiGridList-root .MuiGridListTile-root {
+  height: unset!important;
+}
+
+.MuiPickersToolbar-toolbar.MuiPickersDatePickerRoot-toolbar {
+  background-color: var(--main-color);
+}
+
+.MuiPickersDay-current .MuiTypography-root {
+  color: var(--secondary-color);
+}
+
+.MuiPickersDay-daySelected.MuiPickersDay-current .MuiTypography-root {
+  color: white;
+}
+
+.MuiPickersDay-day.MuiPickersDay-daySelected {
+  background-color: var(--main-color);
+}
+
+.MuiPickersDay-day.MuiPickersDay-daySelected:hover {
+  background-color: var(--main-hover-color);
+}
+
+.MuiDialogActions-root .MuiButtonBase-root.MuiButtonBase-root {
+  color: var(--main-color);
+}
+
+.MuiPickersToolbarText-toolbarTxt,
+.MuiTypography-root,
+.MuiButton-label {
+  font-family: RTRegular, 'sans serif'!important;
+}
+
+.MuiTableHead-root .MuiTableRow-root .MuiTableCell-head {
+  font-weight: bold;
+}
+
+.MuiTableContainer-root {
+  max-height: 440px;
+  overflow: scroll;
+}
+
+.MuiTableContainer-root {
+  padding-left: var(--common-padding);
+}
+
+.MuiTableCell-root {
+  border: 1px solid rgba(224, 224, 224, 1);
+}
+
+.react-swipeable-view-container > div[aria-hidden="false"] {
+  height: 100%;
+}
+
+.react-swipeable-view-container > div[aria-hidden="true"] {
+  height: 0;
+}
+
+/* bootstrap styles */
+
+.MuiGridList-root .MuiGridListTile-tile .b-card {
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.MuiGridList-root .b-card:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.MuiGridList-root .card {
+  border-radius: var(--border-radius);
+}
+
+.MuiGridList-root .card-body {
+  padding: 0;
+}
+
+.modal {
+  font-family: RTRegular, 'sans serif'!important;
+}
+
+.modal a {
+  color: black;
+  transition: color 0.1s ease-in-out;
+}
+
+.modal a:hover {
+  text-decoration: none;
+}
+
+.modal .b-list li:hover a {
+  color: white;
+}
+
+.modal .modal-content {
+  border: none;
+}

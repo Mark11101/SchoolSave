@@ -1,0 +1,78 @@
+.b-pupil-detections .MuiFormControl-root {
+  margin: var(--large-margin);
+}
+
+.b-pupil-detections table {
+  margin: 0 20px 40px 20px;
+}
+
+.b-pupil-detections__no-detections {
+  padding-left: var(--big-padding);
+  padding-bottom: var(--large-padding);
+}
+
+.b-pupil-detections img {
+  max-width: 400px;
+}
+
+.b-pupil-detections.card-columns {
+  column-count: 2;
+}
+
+.b-pupil-detections__dates div.MuiFormControl-root {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.b-pupil-detections__dates {
+  display: flex;
+  align-items: center;
+}
+
+.b-pupil-detections__card .MuiCheckbox-root {
+  padding: 0;
+}
+
+.b-pupil-detections__dates small {
+  display: none;
+}
+
+.b-pupil-detections__horizon-divider {
+  margin: 0 var(--large-margin)
+}
+
+@media (max-width: 768px) {
+  .b-pupil-detections__card .card-body p span {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (max-width: 576px) {
+  .b-pupil-detections.card-columns {
+    column-count: 1;
+  }
+}
+
+@media (max-width: 450px) {
+  .b-pupil-detections__dates {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+  }
+
+  .b-pupil-detections .MuiFormControl-root {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  .b-pupil-detections__horizon-divider {
+    display: none;
+  }
+
+  .b-pupil-detections__dates small {
+    display: block;
+  }
+}

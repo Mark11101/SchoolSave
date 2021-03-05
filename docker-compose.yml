@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+    frontend:
+        build:
+            context: .
+            args:
+                REACT_APP_API_URL: https://save-school.sandlabs.ru/api
+        image: registry.gitlab.com/sandlabs/save-school/frontend:develop
+        restart: unless-stopped
+        ports:
+            - 3001:80

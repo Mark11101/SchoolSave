@@ -1,0 +1,51 @@
+:root {
+  /* shadow */
+  --box-shadow: 0 0 1.99px 0 rgba(0,0,0,.1);
+
+  /* border */
+  --border-radius: 10px;
+
+  /* divider */
+  --divider: 1px solid #e2e2e2;
+
+  /* colors */
+  --main-color: #70f;
+  --main-hover-color: #5b09c0;
+  --secondary-color: #e64f1b;
+  --secondary-hover-color: #d33706;
+  --blue-color: #1b9fe6;
+  --blue-hover-color: #1682bd;
+  --background-color: #eeeeee;
+  --danger-color: rgb(255, 67, 67);
+  --telegram-color: #0088cc;
+  
+  /* sizes */
+  --huge-size:    1.875rem; /* 30px */
+  --big-size:     1.5rem;   /* 24px */
+  --normal-size:  1rem;     /* 16px */
+  --small-size:   0.875rem; /* 14px */
+  --little-size:  0.75rem;  /* 12px */
+  --tiny-size:    0.625rem; /* 10px */
+  --micro-size:   0.5rem;   /* 8px */
+
+  /* indents */
+  --giant-margin: 48px;
+  --huge-margin: 32px;
+  --large-margin: 24px;
+  --big-margin: 20px;
+  --average-margin: 16px;
+  --medium-margin: 12px;
+  --common-margin: 10px;
+  --small-margin: 8px;
+  --tiny-margin: 5px;
+
+  --giant-padding: 48px;
+  --huge-padding: 32px;
+  --large-padding: 24px;
+  --big-padding: 20px;
+  --average-padding: 16px;
+  --medium-padding: 12px;
+  --common-padding: 10px;
+  --small-padding: 8px;
+  --tiny-padding: 5px;
+}

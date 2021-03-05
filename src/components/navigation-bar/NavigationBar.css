@@ -1,0 +1,84 @@
+.b-nav-bar__header {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+
+.b-nav-bar__tabs {
+  flex-grow: 1;
+}
+
+.b-nav-bar__item {
+  background-color: #fff;
+  will-change: background-color;
+  transition: 0.3s ease background-color;
+}
+
+.b-nav-bar__item:hover {
+  background-color: #E3E8FF;
+  transition: 0.3s ease background-color;
+}
+
+.b-nav-bar .MuiTab-root {
+  max-width: initial;
+  flex-grow: 1;
+  padding: 17px 0;
+  min-height: 64px;
+}
+
+.b-app .b-nav-bar .b-nav-bar__log-out-btn,
+.b-app .b-nav-bar .b-nav-bar__go-back-btn {
+  border-radius: 0;
+  min-width: 58px;
+}
+
+.b-nav-bar .MuiTabs-indicator {
+  background-color: var(--main-color);
+}
+
+.b-nav-bar .MuiTab-wrapper {
+  font-family: RTBold, 'sans serif';
+}
+
+.b-nav-bar .MuiTouchRipple-root {
+  outline: none;
+}
+
+.b-nav-bar .MuiTab-wrapper img {
+  max-width: 30px;
+}
+
+.b-nav-bar .MuiTab-textColorInherit {
+  opacity: 1;
+}
+
+@media (max-width: 1200px) {
+  .b-nav-bar .b-nav-bar__log-out-btn,
+  .b-nav-bar .b-nav-bar__go-back-btn {
+    min-width: 64px;
+  }
+}
+
+@media (max-width: 768px) {
+  .b-nav-bar .MuiTab-wrapper img {
+    max-width: 25px;
+  }
+
+  .b-nav-bar .b-nav-bar__log-out-btn,
+  .b-nav-bar .b-nav-bar__go-back-btn {
+    min-width: 50px;
+  }
+
+  .b-nav-bar .MuiTab-root {
+    min-width: 45px;
+    padding: 0;
+  }
+
+  .b-nav-bar__header--fixed-bottom-on-mobile {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+  }
+}

@@ -1,0 +1,89 @@
+.school-page {
+  background-color: var(--background-color);
+}
+
+.b-school {
+  padding: var(--large-padding) 0;
+}
+
+.b-school__header {
+  margin-bottom: var(--big-margin);
+  display: flex;
+  justify-content: space-between;
+}
+
+.b-school__header-title {
+  margin-right: var(--common-margin);
+}
+
+.b-school__data div span:first-child {
+  margin-right: var(--tiny-margin);
+}
+
+.b-school__map .ymaps-2-1-77-map,
+.b-school__map .ymaps-2-1-77-inner-panes {
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
+.b-school .b-school__panel {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.b-school__edit-form .MuiFormControl-root {
+  display: block;
+  margin-bottom: var(--average-margin);
+}
+
+.b-school .b-school__edit-form-save-btn {
+  margin-top: var(--common-margin);
+}
+
+.b-school__edit-form .MuiInputBase-root {
+  width: 292px;
+}
+
+.b-school__map {
+  margin-bottom: 50px;
+}
+
+.b-school .b-school__edit-btn {
+  margin-right: var(--common-margin);
+}
+
+@media (max-width: 479px) {
+  .b-school .b-school__edit-btn {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .b-school__btn-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .b-school__edit-form .MuiInputBase-root {
+    width: 100%;
+  }  
+}
+
+@media (max-width: 768px) {
+  .b-school.container {
+    max-width: unset;
+    padding: 0;
+  }
+
+  .b-school .b-school__panel,
+  .b-school__map .ymaps-2-1-77-map,
+  .b-school__map .ymaps-2-1-77-inner-panes {
+    border-radius: 0;
+  }
+
+  .b-school .b-school__edit-btn {
+    max-height: 40px;
+    min-width: 40px;
+  }
+}

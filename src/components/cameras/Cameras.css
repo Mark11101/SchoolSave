@@ -1,0 +1,72 @@
+.b-cameras {
+  padding-top: var(--large-padding);
+  padding-bottom: var(--medium-padding);
+  height: 100vh;
+}
+
+.b-cameras .b-cameras__search {
+  width: 100%;
+}
+
+.b-cameras .b-list li:hover {
+  cursor: pointer;
+}
+
+.b-cameras .b-cameras__list {
+  padding-right: 16px;
+  margin-right: -16px;
+}
+
+.b-cameras .b-cameras__list li {
+  padding: 0;
+}
+
+.b-cameras__control-panel {
+  display: flex;
+  margin-bottom: var(--common-margin);
+}
+
+.b-cameras .b-cameras__control-panel .b-cameras__control-panel-add-btn {
+  font-size: 25px;
+  border-radius: var(--border-radius);
+  margin-right: var(--common-margin);
+  padding: 0;
+}
+
+.b-cameras__overview-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.b-cameras__overview-input:first-child {
+  margin-bottom: 20px;
+}
+
+.b-cameras__overview-input-divider {
+  margin: 0 20px;
+  font-size: 20px;
+}
+
+.b-cameras__overview-input .MuiInputBase-root {
+  width: unset;
+}
+
+.b-cameras__overview-label {
+  display: block;
+  margin-top: var(--huge-margin);
+}
+
+.b-cameras__no-cameras {
+  display: flex;
+}
+
+.b-cameras .b-cameras__no-cameras .b-cameras__add-btn {
+  margin-bottom: 0;
+  margin-right: 10px;
+  border-radius: var(--border-radius);
+}
+
+.b-cameras .b-cameras__no-cameras-panel {
+  width: 100%;
+  padding: var(--average-padding) 15px;
+}

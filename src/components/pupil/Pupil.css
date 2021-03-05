@@ -1,0 +1,126 @@
+.pupil-page {
+  background-color: var(--background-color);
+}
+
+.b-pupil {
+  padding: var(--large-padding) 0;
+}
+
+.b-pupil__header {
+  margin-bottom: var(--big-margin);
+  display: flex;
+  justify-content: space-between;
+}
+
+.b-pupil__header-title {
+  margin-right: var(--common-margin);
+}
+
+.b-pupil__edit-form .MuiFormControl-root {
+  display: block;
+  margin-bottom: var(--average-margin);
+}
+
+.b-pupil__edit-form .MuiInputBase-root {
+  width: 292px;
+}
+
+.b-pupil .b-pupil__edit-form-save-btn {
+  margin-top: var(--common-margin);
+}
+
+.b-pupil__data div span:first-child {
+  margin-right: var(--tiny-margin);
+}
+
+.b-pupil__nav-bar {
+  border-radius: var(--border-radius);
+  background-color: white;
+  overflow: hidden;
+}
+
+.b-pupil__nav-bar .b-nav-bar__header {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+.b-pupil__panel {
+  margin-bottom: var(--large-margin);
+}
+
+.b-pupil .b-pupil__table {
+  margin-bottom: var(--large-margin);
+}
+
+.b-pupil__table-header {
+  margin-bottom: var(--large-margin);
+}
+
+.b-pupil .b-pupil__edit-btn {
+  margin-right: var(--common-margin);
+}
+
+.b-pupil__add-image-form {
+  width: 87%;
+  margin-top: -3px;
+}
+
+.b-pupil__add-image-form .b-pupil__input-image {
+  margin-bottom: var(--common-margin);
+}
+
+.b-pupil__input-image label {
+  padding-right: 92px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.b-addition-modal .b-pupil__add-image-form .b-pupil__add-img-btn {
+  color: white;
+  width: 100%;
+}
+
+.b-pupil__table-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 360px) {
+  .b-pupil__table-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .b-pupil__table-header-title {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 488px) {
+  .b-pupil .b-pupil__edit-btn {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .b-pupil__btn-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .b-pupil__edit-form .MuiInputBase-root {
+    width: 100%;
+  }  
+}
+
+@media (max-width: 768px) {
+  .b-pupil .b-pupil__edit-btn {
+    max-height: 40px;
+    min-width: 40px;
+  }
+
+  .b-pupil .b-pupil__header-title {
+    font-size: 23px;
+  }
+}

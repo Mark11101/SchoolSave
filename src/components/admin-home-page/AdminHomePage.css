@@ -1,0 +1,147 @@
+.admin-home-page {
+  background-color: var(--background-color);
+}
+
+.b-admin-home-page__schools {
+  padding-top: var(--large-margin);
+  padding-bottom: var(--medium-margin);
+}
+
+.b-admin-home-page__account {
+  margin-top: var(--large-padding);
+  margin-bottom: var(--large-margin);
+}
+
+.b-admin-home-page .b-admin-home-page__search {
+  width: 100%;
+}
+
+.b-admin-home-page__header {
+  margin-bottom: var(--small-margin);
+  display: flex;
+  justify-content: space-between;
+}
+
+.b-admin-home-page__admins-header h1 {
+  margin-bottom: 0;
+}
+
+.b-admin-home-page__edit-form .MuiFormControl-root {
+  display: block;
+  margin-bottom: var(--average-margin);
+}
+
+.b-admin-home-page__edit-form .MuiInputBase-root {
+  width: 292px;
+}
+
+.b-admin-home-page .b-admin-home-page__edit-form-save-btn {
+  margin-top: var(--common-margin);
+}
+
+.b-admin-home-page__data div span:first-child {
+  margin-right: var(--tiny-margin);
+}
+
+.b-admin-home-page__admins .b-list li:hover {
+  cursor: pointer;
+}
+
+.b-admin-home-page__admins .b-cameras__list {
+  padding-right: 16px;
+  margin-right: -16px;
+}
+
+.b-admin-home-page__admins .b-cameras__list li {
+  padding: 0;
+}
+
+.b-admin-home-page .b-admin-home-page__edit-btn {
+  margin-right: var(--common-margin);
+}
+
+.b-addition-modal .b-admin-home-page__edit-form .b-admin-home-page__modal-save-btn {
+  width: 100%;
+  color: white;
+}
+
+.b-admin-home-page__admins-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--average-margin);
+}
+
+.b-admin-home-page__admins .b-admin-home-page__search {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: var(--common-margin);
+}
+
+.b-admin-home-page__account-control-menu {
+  display: flex;
+  margin-bottom: var(--common-margin);
+}
+
+.b-app .b-admin-home-page .b-admin-home-page__add-btn {
+  padding: 0;
+  border-radius: var(--border-radius);
+  margin-right: var(--common-margin);
+}
+
+.b-admin-home-page__btn-container {
+  display: flex;
+}
+
+.b-admin-home-page__edit-form input{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.b-admin-home-page .b-admin-home-page__no-data {
+  padding: var(--average-padding) var(--big-padding);
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .b-admin-home-page__edit-form .MuiInputBase-root {
+    width: 100%;
+  }  
+}
+
+@media (max-width: 768px) {
+  .b-admin-home-page .b-admin-home-page__edit-btn,
+  .b-admin-home-page .b-admin-home-page__delete-btn,
+  .b-admin-home-page__admins-header .b-admin-home-page__admins-header-add-btn {
+    max-height: 40px;
+    min-width: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .b-admin-home-page__edit-form .MuiInputBase-root {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .b-admin-home-page__admins-header {
+    display: block;
+    text-align: center;
+  }
+
+  .b-app .b-admin-home-page__admins-header h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .b-admin-home-page__btn-container {
+    flex-direction: column;
+  }
+
+  .b-admin-home-page .b-admin-home-page__edit-btn {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

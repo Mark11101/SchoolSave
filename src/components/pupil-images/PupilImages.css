@@ -1,0 +1,41 @@
+.b-pupil-images__delete-btn .MuiButton-root {
+  visibility: hidden;
+}
+
+.b-pupil-images table {
+  margin: 0 20px 40px 20px;
+}
+
+.b-pupil-images__table-row:hover .b-pupil-images__delete-btn .MuiButton-root {
+  visibility: visible;
+}
+
+.b-pupil-images .b-pupil-images__delete-btn {
+  border: none;
+}
+
+.b-pupil-images__no-images {
+  padding-left: var(--big-padding);
+  padding-bottom: var(--large-padding);
+}
+
+.b-pupil-images img {
+  max-width: 400px;
+}
+
+.b-pupil-images__card {
+  position: relative;
+}
+
+.b-pupil-images .b-pupil-images__delete-btn.b-button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 0;
+  opacity: 0;
+}
+
+.b-pupil-images__card:hover .b-pupil-images__delete-btn {
+  opacity: 1;
+}

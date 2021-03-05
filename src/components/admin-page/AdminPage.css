@@ -1,0 +1,80 @@
+.admin-page {
+  background-color: var(--background-color);
+}
+
+.b-admin-page {
+  padding-top: var(--large-padding);
+  padding-bottom: var(--large-margin);
+}
+
+.b-admin-page__header {
+  margin-bottom: var(--big-margin);
+  display: flex;
+  justify-content: space-between;
+}
+
+.b-admin-page__header-title {
+  margin-right: var(--common-margin);
+}
+
+.b-admin-page__panel {
+  margin-bottom: var(--large-margin);
+}
+
+.b-admin-page__edit-form .MuiFormControl-root {
+  display: block;
+  margin-bottom: var(--average-margin);
+}
+
+.b-admin-page__edit-form .MuiInputBase-root {
+  width: 292px;
+}
+
+.b-admin-page .b-admin-page__edit-form-save-btn {
+  margin-top: var(--common-margin);
+}
+
+.b-admin-page__data div span:first-child {
+  margin-right: var(--tiny-margin);
+}
+
+.b-admin-page .b-admin-page__edit-btn {
+  margin-right: var(--tiny-margin);
+}
+
+@media (max-width: 600px) {
+  .b-admin-page__edit-form .MuiInputBase-root {
+    width: 100%;
+  }  
+}
+
+@media (max-width: 768px) {
+  .b-admin-page .b-admin-page__edit-btn {
+    flex-basis: 100%;
+    max-width: 143px;
+  }
+
+  .b-admin-page__header {
+    align-items: flex-end;
+  }
+
+  .b-admin-page {
+    padding-bottom: 0;
+  }
+
+  .b-admin-page .b-admin-page__header-title {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 435px) {
+  .b-admin-page__header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .b-admin-page__header-title {
+    margin-bottom: 15px;
+  }
+}

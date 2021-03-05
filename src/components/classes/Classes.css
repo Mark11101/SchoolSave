@@ -1,0 +1,48 @@
+.b-classes {
+  padding-top: var(--large-margin);
+  padding-bottom: var(--medium-margin);
+}
+
+.b-classes .b-classes__search {
+  margin-bottom: var(--common-margin);
+  margin-left: 12px;
+  width: 100%;
+  padding-right: 21px;
+}
+
+.b-classes__class-btn {
+  width: 100%;
+}
+
+.b-classes__class-btn:hover {
+  color: white;
+}
+
+.b-classes__control-panel {
+  display: flex;
+}
+
+.b-app .b-classes .b-classes__add-btn {
+  padding: 0;
+  margin-bottom: 10px;
+  border-radius: var(--border-radius);
+  margin-left: 12px;
+}
+
+.b-classes .b-classes__add-btn span {
+  font-size: 25px;
+}
+
+.b-classes__no-classes {
+  display: flex;
+}
+
+.b-classes .b-classes__no-classes .b-classes__add-btn {
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+.b-classes .b-classes__no-classes-panel {
+  width: 100%;
+  padding: var(--average-padding) 15px;
+}

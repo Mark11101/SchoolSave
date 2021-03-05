@@ -1,0 +1,133 @@
+.classroom-page {
+  background-color: var(--background-color);
+}
+
+.b-classroom {
+  padding-top: var(--large-padding);
+  padding-bottom: var(--large-margin);
+}
+
+.b-classroom__header {
+  margin-bottom: var(--big-margin);
+  display: flex;
+  justify-content: space-between;
+}
+
+.b-classroom__header-title {
+  margin-right: var(--common-margin);
+}
+
+.b-classroom__panel {
+  margin-bottom: var(--large-margin);
+}
+
+.b-classroom__edit-form .MuiFormControl-root {
+  display: block;
+  margin-bottom: var(--average-margin);
+}
+
+.b-classroom__edit-form .MuiInputBase-root {
+  width: 292px;
+}
+
+.b-classroom .b-classroom__edit-form-save-btn {
+  margin-top: var(--common-margin);
+}
+
+.b-classroom__data div span:first-child {
+  margin-right: var(--tiny-margin);
+}
+
+.b-classroom-pupils.b-panel {
+  padding-bottom: 1px;
+}
+
+.b-classroom-pupils .b-classroom-pupils__search {
+  width: 100%;
+  margin-bottom: var(--common-margin);
+}
+
+.b-classroom-pupils .b-classroom-pupils__header {
+  padding: 0;
+}
+
+.b-classroom-pupils .b-classroom-pupils__close-btn {
+  border-radius: 0;
+  padding: 16px 23px;
+}
+
+.b-classroom-pupils__title {
+  padding: var(--common-padding) var(--common-padding);
+}
+
+.b-classroom-pupils .b-list li:hover {
+  cursor: pointer;
+}
+
+.b-classroom-pupils .b-classroom-pupils__list li {
+  padding: 0;
+}
+
+.b-classroom .b-classroom__edit-btn {
+  margin-right: var(--common-margin);
+}
+
+.b-classroom-pupils__control-panel {
+  display: flex;
+}
+
+.b-classroom-pupils .b-classroom-pupils__control-panel .b-classroom-pupils__add-btn {
+  margin-bottom: 10px;
+  font-size: 25px;
+  padding: 0;
+  border-radius: var(--border-radius);
+  margin-right: var(--common-margin);
+}
+
+.b-classroom__no-pupils {
+  display: flex;
+}
+
+.b-classroom .b-classroom__no-pupils .b-classroom__add-btn {
+  margin-bottom: 0;
+  margin-right: 10px;
+  border-radius: var(--border-radius);
+}
+
+.b-classroom .b-classroom__no-pupils-panel {
+  width: 100%;
+  padding: var(--average-padding) 15px;
+}
+
+@media (max-width: 473px) {
+  .b-classroom__btn-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .b-classroom .b-classroom__edit-btn {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .b-classroom__edit-form .MuiInputBase-root {
+    width: 100%;
+  }  
+}
+
+@media (max-width: 768px) {
+  .b-classroom .b-classroom__edit-btn {
+    max-height: 40px;
+    min-width: 40px;
+  }
+
+  .b-classroom {
+    padding-bottom: 0;
+  }
+
+  .b-classroom .b-classroom__header-title {
+    font-size: 23px;
+  }
+}

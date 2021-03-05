@@ -1,0 +1,17 @@
+.b-addition-modal .b-addition-modal__close-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 0;
+  z-index: 1;
+  padding: 10px 15px;
+  font-size: 20px;
+  border: none;
+  color: white;
+  border-top-right-radius: .3rem;
+}
+
+.b-addition-modal small {
+  color: rgba(0, 0, 0, 0.54)!important;
+  font-size: 1rem;
+}
